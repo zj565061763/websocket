@@ -21,7 +21,7 @@ import okhttp3.WebSocket
 import okhttp3.WebSocketListener
 
 internal class OkhttpWSocket(
-  private val url: String,
+  override val url: String,
   private val okHttpClientProvider: () -> OkHttpClient,
 ) : WSocket {
   private val _lock = Any()

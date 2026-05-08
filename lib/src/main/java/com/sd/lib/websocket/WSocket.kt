@@ -12,6 +12,9 @@ import javax.net.ssl.SSLContext
 import javax.net.ssl.X509TrustManager
 
 interface WSocket {
+  /** 地址 */
+  val url: String
+
   /** 连接状态 */
   val connectionStateFlow: StateFlow<ConnectionState>
 
